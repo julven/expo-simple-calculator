@@ -1,0 +1,31 @@
+ <Text>operation: {reduxState.operation} </Text>
+          <Text>stored: {reduxState.storedNum} </Text>
+          <View style={style.buttonRow}>
+            <Button title="1" onPress={() => {changeDisplayNum(1)}}/>
+            <Button title="2"  onPress={() => {changeDisplayNum(2)}}/>
+            <Button title="3"  onPress={() => {changeDisplayNum(3)}}/>
+            <Button title="+" onPress={() => {setOperation("+")}}/>
+          </View>
+          <View style={style.buttonRow}>
+            <Button title="4" onPress={() => {changeDisplayNum(4)}}/>
+            <Button title="5" onPress={() => {changeDisplayNum(5)}}/>
+            <Button title="6" onPress={() => {changeDisplayNum(6)}}/>
+            <Button title="-" onPress={() => {setOperation("-")}}/>
+          </View>
+          <View style={style.buttonRow}>
+            <Button title="7" onPress={() => {changeDisplayNum(7)}}/>
+            <Button title="8" onPress={() => {changeDisplayNum(8)}}/>
+            <Button title="9" onPress={() => {changeDisplayNum(9)}}/>
+            <Button title="*" onPress={() => {setOperation("*")}}/>
+          </View>
+          <View style={style.buttonRow}>
+            <Button title="0" onPress={() => {changeDisplayNum(0)}}/>
+            <Button title="." onPress={() => {changeDisplayNum(".")}}/>
+            <Button title="-/+" onPress={() => {negPos()}}/>
+            <Button title="/" onPress={() => {setOperation("/")}}/>
+          </View>
+          <View style={style.buttonRow}>
+            <Button title="CE" onPress={() => {reset()}}/>
+            <Button title="C" onPress={() => {backSpace()}}/>
+            <Button title="=" onPress={() => {calculate()}}/>    
+          </View>
